@@ -1,0 +1,4 @@
+#!/bin/bash
+# sudo apt get maim xclip
+
+path="$HOME/Pictures/Screenshots/$(date +%s).png" && maim -s "$path" && xclip -selection clipboard -t image/png "$path"
